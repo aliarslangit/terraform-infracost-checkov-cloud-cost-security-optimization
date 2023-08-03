@@ -54,13 +54,14 @@ Infracost works by analyzing your Terraform plan and calculating the cost of the
 
 3.  Run `terraform plan -out=tfplan.binary` to generate a Terraform plan.
 
-4.  Run Infracost with the following command:
+4.  Run Infracost with the following commands:
 
 
 
-`infracost --tfplan=tfplan.binary`
+`infracost --tfplan=tfplan.binary` OR `infracost breakdown --path . `
 
 Infracost will analyze the plan, fetch the latest prices from cloud providers, and display a cost breakdown of your resources.
+
 
 Using Checkov
 -------------
@@ -76,31 +77,30 @@ Checkov provides static analysis of your Terraform code to identify security and
 `checkov -d .`
 
 Checkov will analyze your Terraform files and display any potential security or compliance issues found.
+![Alt Text](path/to/image.png)
 
 Example
 -------
 
-Let's take a simple example to demonstrate the usage of Infracost and Checkov:
+Let's take a simple example to demonstrate the usage of Infracost and Checkov.
 
-hclCopy code
+```
 
-`# main.tf
+Clone the repository and run the commands as mentoned in the screenshots.
 
-provider "aws" {
-  region = "us-east-1"
-}
+```
+<!-- Heading level 3 with green color -->
+<h3 style="color: green;"> Infracost</h3>
 
-resource "aws_instance" "example" {
-  ami           = "ami-0c55b159cbfafe1f0"
-  instance_type = "t2.micro"
-}
+![image](https://github.com/aliarslangit/terraform-infracost-checkov-cloud-cost-security-optimization/blob/main/infracost.png)
 
-resource "aws_s3_bucket" "example_bucket" {
-  bucket = "example-bucket"
-  acl    = "private"
-}`
+<h3 style="color: green;"> Checkov</h3>
 
-In this example, I have a Terraform configuration that creates an AWS EC2 instance and an S3 bucket. To analyze the cost using Infracost and check for compliance using Checkov, follow the steps mentioned in the respective sections.
+![image](https://github.com/aliarslangit/terraform-infracost-checkov-cloud-cost-security-optimization/blob/main/checkov1.png)
+
+![image](https://github.com/aliarslangit/terraform-infracost-checkov-cloud-cost-security-optimization/blob/main/checkov2.png)
+
+
 
 Contributing
 ------------
