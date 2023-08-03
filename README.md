@@ -16,8 +16,9 @@ Table of Contents
 7.  License
 
 </span>
+
 Prerequisites
--------------
+------------
 
 Before using Infracost and Checkov, make sure you have the following installed:
 
