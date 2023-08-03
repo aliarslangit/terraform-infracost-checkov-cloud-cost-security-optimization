@@ -110,8 +110,8 @@ I Ilcome contributions to this project. Please fork the repository, make your ch
 License
 -------
 
-This project is licensed under the MIT License - see the `LICENSE` file for details.
 
+>You can check out the full license [here](https://github.com/aliarslangit/terraform-infracost-checkov-cloud-cost-security-optimization/blob/main/license.txt)
 * * * * *
 
 With this README, you and your team can now effectively use Infracost and Checkov to optimize costs and ensure compliance in your Terraform infrastructure. Always remember to review the output of these tools carefully and take appropriate actions based on the analysis results. Happy Terraforming!
