@@ -59,7 +59,7 @@ Infracost works by analyzing your Terraform plan and calculating the cost of the
 
 
 
-`infracost --tfplan=tfplan.binary` OR `infracost breakdown --path . `
+`infracost --tfplan=tfplan.binary` OR `infracost breakdown --path ./ `
 
 Infracost will analyze the plan, fetch the latest prices from cloud providers, and display a cost breakdown of your resources.
 
@@ -78,7 +78,7 @@ Checkov provides static analysis of your Terraform code to identify security and
 `checkov -d .`
 
 Checkov will analyze your Terraform files and display any potential security or compliance issues found.
-![Alt Text](path/to/image.png)
+
 
 Example
 -------
